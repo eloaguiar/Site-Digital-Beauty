@@ -31,9 +31,13 @@ export default function Home() {
         <span className="eyebrow">CONHEÇA A DIGITAL BEAUTY</span>
         <h2 id="video-intro-title">Assista ao vídeo e conheça a Digital Beauty</h2>
       </div>
-      <div className="video-placeholder" role="img" aria-label="Espaço reservado para o vídeo de apresentação da Digital Beauty">
-        <span className="video-play" aria-hidden="true">▶</span>
-        <div><strong>Vídeo de apresentação</strong><small>Seu vídeo será inserido aqui</small></div>
+      <div className="video-placeholder video-embed">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/555ousXIBP0?rel=0"
+          title="Vídeo de apresentação da Digital Beauty"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
       </div>
     </div></section>
 
@@ -47,7 +51,7 @@ export default function Home() {
 
     <section className="about section-light" id="sobre"><div className="shell section-grid">
       <div className="section-label"><span>02</span><i /></div><div className="section-copy"><span className="eyebrow">QUEM CUIDA DA SUA ESTRATÉGIA</span><h2 className="elo-name">Elo Aguiar</h2>
-        <div className="about-intro"><div><p className="about-subtitle">Especialista em gestão de anúncios para clínicas de saúde e estética.</p><p className="about-body bio-body">Estruturo e gerencio campanhas para atrair pacientes pelo WhatsApp, trazendo mais previsibilidade para a agenda e permitindo que o foco permaneça nos atendimentos. Sou formada em <strong>Estética e Imagem Pessoal</strong> e, há cinco anos, cuido exclusivamente de estratégias de <span className="inline-emphasis">captação de pacientes</span> para clínicas.</p></div><div className="about-photo-placeholder" aria-label="Espaço para fotografia da Elo Aguiar"><span>Adicionar foto com fundo transparente</span></div></div>
+        <div className="about-intro"><div><p className="about-subtitle">Especialista em gestão de anúncios para clínicas de saúde e estética.</p><p className="about-body bio-body">Estruturo e gerencio campanhas para atrair pacientes pelo WhatsApp, trazendo mais previsibilidade para a agenda e permitindo que o foco permaneça nos atendimentos. Sou formada em <strong>Estética e Imagem Pessoal</strong> e, há cinco anos, cuido exclusivamente de estratégias de <span className="inline-emphasis">captação de pacientes</span> para clínicas.</p></div><div className="about-photo-placeholder"><img src="/eloisa.png" alt="Elo Aguiar" width="640" height="844" /></div></div>
       </div>
     </div></section>
 
