@@ -50,8 +50,17 @@ export default function Home() {
     </div></section>
 
     <section className="about section-light" id="sobre"><div className="shell section-grid">
-      <div className="section-label"><span>02</span><i /></div><div className="section-copy"><span className="eyebrow">QUEM CUIDA DA SUA ESTRATÉGIA</span><h2 className="elo-name">Elo Aguiar</h2>
-        <div className="about-intro"><div><p className="about-subtitle">Especialista em gestão de anúncios para clínicas de saúde e estética.</p><p className="about-body bio-body">Estruturo e gerencio campanhas para atrair pacientes pelo WhatsApp, trazendo mais previsibilidade para a agenda e permitindo que o foco permaneça nos atendimentos. Sou formada em <strong>Estética e Imagem Pessoal</strong> e, há cinco anos, cuido exclusivamente de estratégias de <span className="inline-emphasis">captação de pacientes</span> para clínicas.</p></div><div className="about-photo-placeholder"><img src="/eloisa.png" alt="Elo Aguiar" width="640" height="844" /></div></div>
+      <div className="section-label"><span>02</span><i /></div>
+      <div className="section-copy">
+        <div className="about-intro">
+          <div className="about-photo-placeholder"><img src="/eloisa.png" alt="Elo Aguiar" width="640" height="844" /></div>
+          <div className="about-profile-copy">
+            <span className="eyebrow">QUEM CUIDA DA SUA ESTRATÉGIA</span>
+            <h2 className="elo-name">Elo Aguiar</h2>
+            <p className="about-subtitle">Especialista em gestão de anúncios para clínicas de saúde e estética.</p>
+            <p className="about-body bio-body">Sou formada em <strong>Estética e Imagem Pessoal</strong> e, há 5 anos, estruturo e gerencio campanhas de anúncios para atrair pacientes qualificados para profissionais de estética e saúde.</p>
+          </div>
+        </div>
       </div>
     </div></section>
 

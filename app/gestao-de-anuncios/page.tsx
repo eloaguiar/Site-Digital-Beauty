@@ -93,8 +93,7 @@ export default function GestaoDeAnuncios() {
               <p>Se você busca uma captação de pacientes que reflita a qualidade da sua entrega clínica, o próximo passo é agendarmos uma reunião. Me envie uma mensagem.</p>
             </div>
             <a className="mentor-cta" href={whatsappLink} target="_blank" rel="noreferrer">
-              [ Quero alinhar a Gestão pelo WhatsApp ]
-              <span aria-hidden="true">↗</span>
+              Quero alinhar a Gestão pelo WhatsApp
             </a>
           </div>
         </div>

@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ??
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL
-    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "https://digital-beauty-dsn.brunopollnow.chatgpt.site");
+import "./mobile-overrides.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL("https://digital-beauty-dsn.brunopollnow.chatgpt.site"),
   title: "Digital Beauty",
   description: "Gestão de anúncios e mentoria para clínicas de saúde e estética.",
   openGraph: {

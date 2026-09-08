@@ -1,0 +1,485 @@
+/* Mobile art direction. Desktop remains entirely controlled by globals.css. */
+@media (max-width: 820px) {
+  .shell { width: calc(100% - 60px) !important; }
+  .site-header { height: 76px !important; }
+  .brand-logo { width: 124px !important; }
+  .main-nav { gap: 12px !important; font-size: 12px !important; }
+
+  /* Each opening is composed separately. */
+  .hero,
+  .hero-home,
+  .mentor-hero,
+  .management-hero {
+    display: flex !important;
+    min-height: 100svh !important;
+    min-height: 100dvh !important;
+    flex-direction: column !important;
+  }
+
+  .hero-home .hero-content {
+    display: flex !important;
+    min-height: calc(100svh - 76px) !important;
+    min-height: calc(100dvh - 76px) !important;
+    padding: clamp(58px, 8svh, 72px) 0 clamp(66px, 9svh, 82px) !important;
+    align-items: center !important;
+  }
+  .hero-home .hero-copy { display: grid !important; width: 100% !important; gap: 0 !important; }
+  .hero-home .hero-copy > .eyebrow { margin: 0 0 clamp(29px, 4svh, 36px) !important; }
+  .hero-home .hero-copy h1 {
+    max-width: 100% !important;
+    margin: 0 !important;
+    font-size: clamp(29px, 8vw, 32px) !important;
+    font-weight: 440 !important;
+    line-height: 1.09 !important;
+    letter-spacing: -.035em !important;
+  }
+  .hero-home .hero-copy > p { margin: clamp(34px, 4.7svh, 42px) 0 0 !important; font-size: 15.5px !important; line-height: 1.56 !important; }
+  .hero-home .hero-actions { margin-top: clamp(36px, 5svh, 44px) !important; }
+
+  .management-hero-content {
+    display: grid !important;
+    min-height: calc(100svh - 76px) !important;
+    min-height: calc(100dvh - 76px) !important;
+    padding: clamp(56px, 8svh, 72px) 0 clamp(66px, 9svh, 82px) !important;
+    align-content: center !important;
+    gap: clamp(30px, 4.2svh, 38px) !important;
+  }
+  .management-hero-copy { display: grid !important; gap: 0 !important; }
+  .management-hero-copy h1 {
+    margin: 0 !important;
+    font-size: clamp(29px, 8vw, 32px) !important;
+    font-weight: 440 !important;
+    line-height: 1.09 !important;
+    letter-spacing: -.035em !important;
+  }
+  .management-hero-copy p {
+    margin: clamp(34px, 4.7svh, 42px) 0 0 !important;
+    padding-top: clamp(26px, 3.8svh, 34px) !important;
+    font-size: 15.5px !important;
+    line-height: 1.57 !important;
+  }
+
+  .mentor-hero-content,
+  .mentor-hero-content-simple {
+    display: flex !important;
+    min-height: calc(100svh - 76px) !important;
+    min-height: calc(100dvh - 76px) !important;
+    padding: clamp(58px, 8svh, 72px) 0 clamp(68px, 9svh, 84px) !important;
+    align-items: center !important;
+  }
+  .mentor-hero-content-simple > div { display: grid !important; width: 100% !important; gap: 0 !important; }
+  .mentor-hero-content-simple .eyebrow { margin: 0 0 clamp(30px, 4.2svh, 38px) !important; }
+  .mentor-hero-content h1 {
+    margin: 0 !important;
+    font-size: clamp(29px, 8vw, 32px) !important;
+    font-weight: 440 !important;
+    line-height: 1.09 !important;
+    letter-spacing: -.035em !important;
+  }
+  .mentor-hero-content .mentor-hero-lead { margin: clamp(36px, 5svh, 44px) 0 0 !important; font-size: 15.5px !important; line-height: 1.57 !important; }
+
+  .eyebrow,
+  .management-eyebrow { font-size: 10px !important; line-height: 1.35 !important; letter-spacing: .17em !important; }
+  .hero-actions .button { width: 100% !important; min-width: 0 !important; min-height: 60px !important; padding: 0 22px !important; }
+
+  /* Full-height reading folds. Content-heavy folds expand naturally. */
+  .video-intro,
+  .paths,
+  .about,
+  .method-preview,
+  .niches,
+  .closing-cta,
+  .mentor-section,
+  .mentor-logic,
+  .management-experience,
+  .management-fit,
+  .management-role,
+  .management-next {
+    box-sizing: border-box !important;
+    min-height: 100svh !important;
+    min-height: 100dvh !important;
+  }
+
+  .video-intro,
+  .management-experience,
+  .management-next,
+  .mentor-logic,
+  .closing-cta {
+    display: flex !important;
+    padding-top: clamp(88px, 12svh, 112px) !important;
+    padding-bottom: clamp(88px, 12svh, 112px) !important;
+    align-items: center !important;
+  }
+
+  .paths,
+  .method-preview,
+  .niches,
+  .mentor-section,
+  .management-fit,
+  .management-role {
+    padding-top: clamp(82px, 11svh, 104px) !important;
+    padding-bottom: clamp(88px, 12svh, 112px) !important;
+  }
+
+  .video-intro > .shell { display: grid !important; gap: 34px !important; }
+  .video-intro-heading { display: grid !important; gap: 18px !important; margin: 0 !important; }
+  .video-intro-heading > * { margin: 0 !important; }
+
+  .video-intro-heading h2,
+  .paths h2,
+  .about h2,
+  .method-preview h2,
+  .niches h2,
+  .closing-cta h2,
+  .mentor-section h2,
+  .mentor-logic h2,
+  .management-experience h2,
+  .management-fit h2,
+  .management-role h2,
+  .management-next h2 {
+    font-size: clamp(27px, 7.5vw, 30px) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -.035em !important;
+  }
+
+  .section-grid,
+  .paths-heading,
+  .mentor-heading,
+  .management-heading,
+  .management-role-grid,
+  .management-next-grid,
+  .logic-grid { gap: 20px !important; }
+
+  .paths-heading > div:last-child,
+  .mentor-heading > div:last-child,
+  .method-preview .section-grid > div:last-child,
+  .niches-heading,
+  .management-next-content,
+  .logic-content { display: grid !important; gap: 22px !important; }
+
+  .paths-heading > div:last-child > *,
+  .mentor-heading > div:last-child > *,
+  .method-preview .section-grid > div:last-child > *,
+  .niches-heading > *,
+  .management-next-content > *,
+  .logic-content > * { margin-top: 0 !important; margin-bottom: 0 !important; }
+
+  .section-lead-light,
+  .mentor-intro,
+  .management-next-copy p,
+  .niches-heading > p { font-size: 15.5px !important; line-height: 1.62 !important; }
+
+  .path-cards,
+  .pillar-grid,
+  .deliverables-grid,
+  .management-profile-grid,
+  .method-visuals,
+  .niche-list { margin-top: 38px !important; }
+
+  .path-cards,
+  .pillar-grid,
+  .deliverables-grid,
+  .management-profile-grid,
+  .method-visuals { gap: 16px !important; }
+
+  .path-card { min-height: 0 !important; padding: 30px 24px !important; }
+  .pillar-card,
+  .method-visual,
+  .deliverables-grid li { min-height: 0 !important; padding: 25px 22px !important; }
+  .pillar-card h3,
+  .method-visual h3 { margin-top: 20px !important; font-size: 24px !important; line-height: 1.18 !important; }
+  .pillar-card strong { min-height: 0 !important; font-size: 13px !important; }
+  .pillar-card p,
+  .method-visual p { margin-top: 15px !important; font-size: 15px !important; line-height: 1.6 !important; }
+
+  /* Gestão: compact cards with a readable hierarchy. */
+  .management-experience .niches-heading { display: grid !important; gap: 26px !important; }
+  .management-experience .management-specialties { margin: 0 !important; font-size: 15.5px !important; line-height: 1.68 !important; }
+  .management-profile-grid { margin-top: 34px !important; }
+  .management-profile-card,
+  .management-profile-card:nth-child(2) {
+    display: block !important;
+    min-height: 0 !important;
+    padding: 25px 23px 27px !important;
+    border-radius: 14px !important;
+  }
+  .management-profile-card > span { display: block !important; margin-bottom: 18px !important; font-size: 11px !important; }
+  .management-profile-card p { margin: 0 !important; font-size: 17px !important; line-height: 1.56 !important; }
+
+  .management-role-content { padding: 28px 21px !important; border-radius: 18px !important; }
+  .management-role-copy { margin-top: 26px !important; }
+  .management-role-copy p { margin: 0 !important; font-size: 16px !important; line-height: 1.56 !important; }
+  .management-role-copy p + p { margin-top: 16px !important; }
+
+  /* Final calls are vertically centered without oversized gaps. */
+  .management-next-grid,
+  .logic-grid { padding: 0 !important; }
+  .management-next-content,
+  .logic-content { gap: 26px !important; }
+  .management-next-copy,
+  .management-next-copy p,
+  .mentor-logic .mentor-intro { margin: 0 !important; }
+  .mentor-cta {
+    width: 100% !important;
+    min-height: 62px !important;
+    margin-top: 4px !important;
+    padding: 17px 22px !important;
+    border-radius: 16px !important;
+    justify-content: center !important;
+    font-size: 12px !important;
+    font-weight: 620 !important;
+    line-height: 1.38 !important;
+    letter-spacing: .07em !important;
+    text-align: center !important;
+  }
+
+  /* Elo Aguiar presentation: preserve the approved portrait scale. */
+  .about {
+    display: flex !important;
+    padding-top: clamp(78px, 10svh, 96px) !important;
+    padding-bottom: clamp(86px, 12svh, 112px) !important;
+    align-items: center !important;
+  }
+  .about .section-copy { display: block !important; }
+  .about .about-intro { display: grid !important; grid-template-columns: 1fr !important; gap: 0 !important; margin-top: 0 !important; }
+  .about .about-photo-placeholder {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    width: min(calc(100% + 24px), 356px) !important;
+    min-height: 0 !important;
+    margin: 0 auto !important;
+  }
+  .about .about-profile-copy { grid-column: 1 !important; grid-row: 2 !important; margin-top: 28px !important; padding: 0 2px !important; }
+  .about .about-profile-copy > .eyebrow {
+    display: block !important;
+    margin: 0 !important;
+    color: #765443 !important;
+    font-size: 10px !important;
+    font-weight: 620 !important;
+    line-height: 1.2 !important;
+    letter-spacing: .18em !important;
+    text-align: left !important;
+  }
+  .about .about-profile-copy .elo-name {
+    margin: 8px 0 0 !important;
+    color: #3b241a !important;
+    font-size: clamp(42px, 11.5vw, 48px) !important;
+    font-weight: 480 !important;
+    line-height: .98 !important;
+    letter-spacing: -.045em !important;
+    text-align: left !important;
+  }
+  .about .about-subtitle {
+    max-width: 330px !important;
+    margin: 12px 0 0 !important;
+    color: #4f3428 !important;
+    font-size: 18px !important;
+    font-weight: 560 !important;
+    line-height: 1.38 !important;
+    letter-spacing: -.018em !important;
+    text-align: left !important;
+  }
+  .about .bio-body {
+    margin: 18px 0 0 !important;
+    padding-top: 16px !important;
+    border-top-color: rgba(92, 59, 43, .18) !important;
+    color: #5e5049 !important;
+    font-size: 16px !important;
+    line-height: 1.66 !important;
+    letter-spacing: -.012em !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .shell { width: calc(100% - 56px) !important; }
+  .site-header { height: 74px !important; }
+  .hero-home .hero-content,
+  .management-hero-content,
+  .mentor-hero-content,
+  .mentor-hero-content-simple {
+    min-height: calc(100svh - 74px) !important;
+    min-height: calc(100dvh - 74px) !important;
+  }
+}
+
+/* Compact phones keep the same hierarchy with slightly tighter rhythm. */
+@media (max-width: 820px) and (max-height: 720px) {
+  .site-header { height: 62px !important; }
+  .brand-logo { width: 112px !important; }
+  .hero-home .hero-content,
+  .management-hero-content,
+  .mentor-hero-content,
+  .mentor-hero-content-simple {
+    min-height: calc(100svh - 62px) !important;
+    padding-top: 28px !important;
+    padding-bottom: 34px !important;
+  }
+  .hero-home .hero-copy h1,
+  .management-hero-copy h1,
+  .mentor-hero-content h1 { font-size: clamp(28px, 7.7vw, 30px) !important; }
+  .hero-home .hero-copy > .eyebrow,
+  .mentor-hero-content-simple .eyebrow { margin-bottom: 18px !important; }
+  .hero-home .hero-copy > p,
+  .management-hero-copy p,
+  .mentor-hero-content .mentor-hero-lead { margin-top: 22px !important; font-size: 15px !important; line-height: 1.46 !important; }
+  .management-hero-content { gap: 20px !important; }
+  .management-hero-copy p { padding-top: 20px !important; }
+  .hero-home .hero-actions { margin-top: 24px !important; }
+}
+
+/* Six full-screen folds refined from the mobile visual review. */
+@media (max-width: 820px) {
+  /* Home opening: occupy the fold without changing its height. */
+  .hero-home .hero-content {
+    padding-top: clamp(36px, 5dvh, 48px) !important;
+    padding-bottom: clamp(42px, 6dvh, 56px) !important;
+  }
+
+  .hero-home .hero-copy {
+    min-height: clamp(470px, 70dvh, 560px) !important;
+    grid-template-rows: auto auto auto auto !important;
+    align-content: space-between !important;
+  }
+
+  .hero-home .hero-copy > .eyebrow,
+  .hero-home .hero-copy > p,
+  .hero-home .hero-actions {
+    margin: 0 !important;
+  }
+
+  .hero-home .hero-copy h1 {
+    font-size: clamp(31px, 8.6vw, 34px) !important;
+    line-height: 1.075 !important;
+  }
+
+  .hero-home .hero-copy > p {
+    font-size: 16.5px !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Gestão opening: keep the divider while enlarging the text block. */
+  .management-hero-content {
+    padding-top: clamp(38px, 5.5dvh, 52px) !important;
+    padding-bottom: clamp(44px, 6.5dvh, 60px) !important;
+    gap: clamp(34px, 5dvh, 42px) !important;
+  }
+
+  .management-hero-copy {
+    min-height: clamp(350px, 52dvh, 430px) !important;
+    grid-template-rows: auto auto !important;
+    align-content: space-between !important;
+  }
+
+  .management-hero-copy h1 {
+    font-size: clamp(31px, 8.6vw, 34px) !important;
+    line-height: 1.075 !important;
+  }
+
+  .management-hero-copy p {
+    margin: 0 !important;
+    padding-top: clamp(24px, 3.5dvh, 30px) !important;
+    font-size: 16.5px !important;
+    line-height: 1.62 !important;
+  }
+
+  /* Mentoria opening: distribute eyebrow, promise and explanation. */
+  .mentor-hero-content,
+  .mentor-hero-content-simple {
+    padding-top: clamp(38px, 5.5dvh, 52px) !important;
+    padding-bottom: clamp(46px, 6.5dvh, 62px) !important;
+  }
+
+  .mentor-hero-content-simple > div {
+    min-height: clamp(370px, 55dvh, 450px) !important;
+    grid-template-rows: auto auto auto !important;
+    align-content: space-between !important;
+  }
+
+  .mentor-hero-content-simple .eyebrow,
+  .mentor-hero-content h1,
+  .mentor-hero-content .mentor-hero-lead {
+    margin: 0 !important;
+  }
+
+  .mentor-hero-content h1 {
+    font-size: clamp(31px, 8.7vw, 34px) !important;
+    line-height: 1.075 !important;
+  }
+
+  .mentor-hero-content .mentor-hero-lead {
+    font-size: 16.5px !important;
+    line-height: 1.62 !important;
+  }
+
+  /* Gestão — Experiência aplicada. */
+  .management-experience .niches-heading {
+    min-height: clamp(360px, 53dvh, 450px) !important;
+    grid-template-rows: auto auto auto !important;
+    align-content: space-between !important;
+    gap: 0 !important;
+  }
+
+  .management-experience h2 {
+    font-size: clamp(31px, 8.6vw, 34px) !important;
+    line-height: 1.1 !important;
+  }
+
+  .management-experience .management-specialties {
+    font-size: 16.5px !important;
+    line-height: 1.72 !important;
+  }
+
+  /* Gestão — Próximo passo. */
+  .management-next-content {
+    min-height: clamp(330px, 49dvh, 410px) !important;
+    grid-template-rows: auto auto auto !important;
+    align-content: space-between !important;
+    gap: 0 !important;
+  }
+
+  .management-next h2 {
+    font-size: clamp(34px, 9.4vw, 38px) !important;
+    line-height: 1.08 !important;
+  }
+
+  .management-next-copy p {
+    font-size: 17px !important;
+    line-height: 1.66 !important;
+  }
+
+  /* Mentoria — Próximo passo. */
+  .mentor-logic .logic-content {
+    min-height: clamp(390px, 58dvh, 480px) !important;
+    grid-template-rows: auto auto auto auto !important;
+    align-content: space-between !important;
+    gap: 0 !important;
+  }
+
+  .mentor-logic h2 {
+    font-size: clamp(32px, 8.9vw, 36px) !important;
+    line-height: 1.1 !important;
+  }
+
+  .mentor-logic .mentor-intro {
+    font-size: 17px !important;
+    line-height: 1.66 !important;
+  }
+
+  .management-next .mentor-cta,
+  .mentor-logic .mentor-cta {
+    min-height: 70px !important;
+    margin-top: 0 !important;
+    padding: 20px 24px !important;
+    font-size: 12.5px !important;
+    line-height: 1.42 !important;
+  }
+}
+
+@media (max-width: 820px) and (max-height: 720px) {
+  .hero-home .hero-copy { min-height: clamp(410px, 68dvh, 470px) !important; }
+  .management-hero-copy { min-height: clamp(310px, 50dvh, 360px) !important; }
+  .mentor-hero-content-simple > div { min-height: clamp(330px, 53dvh, 380px) !important; }
+  .management-experience .niches-heading { min-height: clamp(330px, 51dvh, 380px) !important; }
+  .management-next-content { min-height: clamp(300px, 47dvh, 350px) !important; }
+  .mentor-logic .logic-content { min-height: clamp(350px, 56dvh, 410px) !important; }
+}
